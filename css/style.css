@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* 
+Head, 400, 600
+font-family: 'Poppins', sans-serif; 
+Body, 400
+font-family: 'Open Sans', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 8rem;
+    margin-top: 2rem;
+    margin-left: 2.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.3rem;
+}
+
+.main-image {
+    width: 100%;
+    margin-top: 3.5rem;
+}
+
+.content {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.485rem;
+    line-height: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.register-button {
+    background-color: white;
+    border-radius: 2.5rem;
+    width: 12.5rem;
+    padding: 0.67rem;
+    font-size: 13px;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    mix-blend-mode: screen;
+    box-shadow: 0px 8px 10px -3px rgba(56, 41, 97, 0.75);
+}
+
+.register-button:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    box-shadow: 0px 8px 10px -3px hsl(300, 36%, 30%);
+}
+
+footer {
+    margin-top: 4rem;
+    margin-bottom: 2.2rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    margin-top: 4rem;
+}
+
+.bx {
+    font-size: 15px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 0.35rem;
+}
+
+.bx:hover {
+    border: 1px solid hsl(300, 74%, 63%);
+    color: hsl(300, 74%, 63%);
+}
+
+@media (min-width: 1100px) {
+    body {
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(/images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .logo {
+        width: 13.5rem;
+        margin-top: 8rem;
+        margin-left: 4.3rem;
+    }
+
+    main {
+        flex-direction: row;
+        position: relative;
+        max-width: 1440px;
+        margin: 0 2.2rem;
+        margin-top: 1.7rem;
+    }
+
+    .content {
+        text-align: left;
+        margin-top: 6.2rem;
+        margin-left: 3.4rem;
+        padding-right: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.47rem;
+        line-height: 3.8rem;
+    }
+
+    p {
+        font-size: 1.12rem;
+        line-height: 1.7rem;
+        margin-top: 1rem;
+    }
+
+    .register-button {
+        margin-right: 19.3rem;
+        text-align: center;
+        padding: 0.95rem;
+        font-size: 19px;
+        margin-top: 1.55rem;
+    }
+
+    footer {
+        margin-top: -2.9rem;
+        display: flex;
+        justify-content: end;
+        margin-right: 4.95rem;
+    }
+
+    .bx {
+        font-size: 1.3em;
+        padding: .7rem;
+    }
+}
